@@ -8,6 +8,7 @@
   "rules": {
     "no-null-keyword": false,
 
+    "newline-per-chained-call": false,
     // 禁止给类的构造函数的参数添加修饰符
     "no-parameter-properties": false,
     // 禁止使用 debugger

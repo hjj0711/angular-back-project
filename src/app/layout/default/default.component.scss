@@ -1,0 +1,103 @@
+@import "../../styles/index.scss";
+
+.page-loading {
+    width: 100vw;
+    height: 3px;
+    overflow: hidden;
+    background: fade(#ddd, 40%);
+    position: fixed;
+    z-index: 29;
+
+    &::after {
+        content: ' ';
+        height: 100%;
+        width: 33.3vw;
+        animation: gradcolours 5s steps(1) infinite, loadthird 1s infinite linear;
+        display: block;
+        transform-origin: top left;
+    }
+}
+
+@keyframes loadthird {
+    0% {
+        transform: translateX(-33.3vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes gradcolours {
+    0% {
+        background:
+        linear-gradient(90deg,
+        fade(#e88098, 0) 0%,
+        #e88098 30%,
+        #e88098 50%,
+        #e88098 70%,
+        fade(#e88098, 0) 100%);
+    }
+
+    20% {
+        background:
+        linear-gradient(90deg,
+        fade(#84bebe, 0) 0%,
+        #84bebe 30%,
+        #84bebe 50%,
+        #84bebe 70%,
+        fade(#84bebe, 0) 100%);
+    }
+
+    40% {
+        background:
+        linear-gradient(90deg,
+        fade(#e98724, 0) 0%,
+        #e98724 30%,
+        #e98724 50%,
+        #e98724 70%,
+        fade(#e98724, 0) 100%);
+    }
+
+    60% {
+        background:
+        linear-gradient(90deg,
+        fade(#afc94e, 0) 0%,
+        #afc94e 30%,
+        #afc94e 50%,
+        #afc94e 70%,
+        fade(#afc94e, 0) 100%);
+    }
+
+    80% {
+        background:
+        linear-gradient(90deg,
+        fade(#6297a4, 0) 0%,
+        #6297a4 30%,
+        #6297a4 50%,
+        #6297a4 70%,
+        fade(#6297a4, 0) 100%);
+    }
+}
+
+.main-header {
+    display: flex;
+    height: 100%;
+    line-height: 1.5em;
+    align-items: center;
+}
+
+.main-sidebar {
+    min-height: 354px;
+    height: calc(100vh - 54px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+.main-body {
+    padding: 0 0 0 5px;
+    min-height: 280px;
+    height: calc(100vh - 54px);
+    overflow-y: auto;
+}

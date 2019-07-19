@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ComponentsModule } from './components/components.module';
+import { LayoutModule } from './layout/layout.module';
+
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,7 +26,8 @@ registerLocaleData(zh);
     NgZorroAntdModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ComponentsModule
+    ComponentsModule,
+    LayoutModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
