@@ -1,7 +1,8 @@
 <div class="page-loading" *ngIf="isFetching"></div>
 <nz-layout class="layout">
   <nz-header>
-    <layout-header class="main-header"></layout-header>
+    <app-header class="main-header"></app-header>
+    tou头
   </nz-header>
   <nz-layout>
     <nz-sider
@@ -10,7 +11,7 @@
       [(nzCollapsed)]="layout.collapsed"
       [nzTrigger]="triggerTemplate"
     >
-      <layout-sidebar></layout-sidebar>
+      <app-sidebar></app-sidebar>
     </nz-sider>
     <nz-content class="main-body">
       <router-outlet></router-outlet>

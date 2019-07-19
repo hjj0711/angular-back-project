@@ -7,8 +7,20 @@
   ],
   "rules": {
     "no-null-keyword": false,
-
+    "no-implicit-dependencies": false,
     "newline-per-chained-call": false,
+    "prefer-inline-decorator" : false,
+    "typedef": {
+      "options": [
+          // "call-signature",
+          "arrow-call-signature",
+          "parameter",
+          "arrow-parameter",
+          "property-declaration",
+          "variable-declaration",
+          "member-variable-declaration",
+      ],
+  },
     // 禁止给类的构造函数的参数添加修饰符
     "no-parameter-properties": false,
     // 禁止使用 debugger

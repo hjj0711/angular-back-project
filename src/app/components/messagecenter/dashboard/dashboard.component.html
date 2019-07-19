@@ -1,4 +1,27 @@
 <!-- <page-header></page-header> -->
-<p style="margin:0;padding:0;height:1000px;background-color:#affd;">
-  messagecenter dashboard works!
-</p>
+<!-- <div style="height:100vh;background-color:#affd;"> -->
+    <nz-layout class="hole">
+        <nz-sider class="sider">Sider</nz-sider>
+        <nz-layout>
+          <nz-header class="header">
+              <nz-steps>
+                  <nz-step nzTitle="Login" nzStatus="finish" nzIcon="user"></nz-step>
+                  <nz-step nzTitle="Verification" nzStatus="finish" nzIcon="solution"></nz-step>
+                  <nz-step nzTitle="Pay" nzStatus="process" nzIcon="loading"></nz-step>
+                  <nz-step nzTitle="Done" nzStatus="wait" [nzIcon]="iconTemplate"></nz-step>
+                  <ng-template #iconTemplate><i nz-icon nzType="smile"></i></ng-template>
+                </nz-steps>
+          </nz-header>
+          <nz-content class="content">
+              <nz-carousel nzAutoPlay>
+                  <div nz-carousel-content class="content1" *ngFor="let index of array">
+                    <div width="500px">
+                        <img [src]="index" width="500px" alt="">
+                    </div>
+                  </div>
+                </nz-carousel>
+          </nz-content>
+          <nz-footer class="footer">Footer</nz-footer>
+        </nz-layout>
+      </nz-layout>
+    <!-- </div> -->

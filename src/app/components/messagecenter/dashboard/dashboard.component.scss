@@ -1,0 +1,31 @@
+.sider{
+    background: rgb(240, 242, 245);
+    height: 15vh
+}
+.header{
+    background: rgb(240, 242, 245);
+    height: 15vh;
+    padding-top: 30px;
+}
+.content{
+    height: 40vh;
+}
+[nz-carousel-content] {
+    text-align: center;
+    height: 240px;
+    // line-height: 160px;
+    // background: #364d79;
+    width: 500px;
+    color: #fff;
+    overflow: hidden;
+    .content1{
+        margin: 0 auto
+    }
+  }
+
+  h3 {
+    color: #fff;
+  }
+  .hole{
+      padding-right: 34px;
+  }

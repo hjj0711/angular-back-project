@@ -19,8 +19,8 @@ import { UserRoutingModule } from './user-routing.module';
     NzFormModule,
     NzInputModule,
     NzButtonModule,
-    NzIconModule
-    // NzCheckboxModule
+    NzIconModule,
+    NzCheckboxModule
     
   ]
 })
